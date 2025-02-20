@@ -1,0 +1,67 @@
+.a {
+    background-color: black;
+    color: white;
+}
+.b {
+    background-color: rgb(255,216,20);
+    border-color: rgb(255,216,20);
+    color: black;
+    border-radius: 20px;
+}
+.c {
+    background-color: rgb(46,164,79);
+    border-color: rgb(46,164,79);
+    color: white;
+    border-radius: 5px;
+}
+.d1 {
+    background-color: rgb(121,82,179);
+    border-color:rgb(121,82,179);
+    color: white;
+    border-radius: 5px;
+}
+.d2 {
+    background-color: white ;
+    color: rgb(108,117,125);
+    border-color: rgb(108,117,125);
+    border-radius: 5px;
+}
+.e1 {
+    background-color: rgb(10,102,194);
+    color: white;
+    border-radius: 30px;
+    border-color: rgb(10,102,194);
+}
+.e2 {
+    background-color: white ;
+    color: rgb(10,102,194);
+    border-color:rgb(10,102,194);
+    border-radius: 30px;
+}
+.at {
+    color:rgb(0,113,113);
+    margin-top:10px;
+}
+.h1 {
+    font-size: 25px;
+}
+.p1 {
+    color: rgb(0,118,0);
+    font-size: 15px;
+}
+.p2 {
+    color: black;
+    font-size: 15px;
+}
+.b1 {
+    background-color: rgb(255,216,20) ;
+    color: black;
+    border-color:rgb(255,216,20) ;
+    border-radius: 30px;
+}
+.b2 {
+    background-color: rgb(255,164,28) ;
+    color: black;
+    border-color:rgb(255,164,28) ;
+    border-radius: 30px;
+}
