@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const time = 9;
+        const name = 'Unnati';
+        if (time>=6 && time<=12) 
+        {
+          console.log(`Good morning ${name}!`);
+        } 
+        else if (time>=13 && time<=17) 
+        {
+          console.log(`Good afternoon ${name}!`);
+        } 
+        else 
+        {
+          console.log(`Good night ${name}!`);
+        }
+        const a = 5;
+        const h=true;
+        if ((a<= 6 || a>= 65) && h) 
+        {
+            console.log('Discount');
+        } 
+        else 
+        {
+            console.log('No Discount');
+        }
+        const num= Math.random();
+        let res;
+        if(num<0.5)
+        {
+            console.log('heads');
+            res='heads';
+        }
+        else
+        {
+            console.log('tails');
+            res='tails';
+        }
+        const guess='heads';
+        if(guess===res)
+        {
+            console.log('You Win!!!');
+        }
+        else
+        {
+            console.log('You Loose...');
+        }
+        console.log(guess === res ? 'You win!..' : 'You loose!..');
+      </script>
+</body>
+</html>
