@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Add and Remove</title>
+</head>
+<body>
+  <div id="container">
+    <h1>My List</h1>
+    <ul id="myList">
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+    </ul>
+    <button id="addButton">Add Item</button>
+  </div>
+
+  <script>
+    // Add new item when the button is clicked
+    const addButton = document.getElementById('addButton');
+    addButton.addEventListener('click', () => {
+      const newItem = document.createElement('li');
+      newItem.textContent = 'New Item';
+      document.getElementById('myList').appendChild(newItem);
+    });
+
+    // Remove item when clicked
+    const myList = document.getElementById('myList');
+    myList.addEventListener('click', (e) => {
+      if (e.target && e.target.nodeName === 'LI') {
+        e.target.remove();
+      }
+    });
+  </script>
+</body>
+</html>
