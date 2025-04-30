@@ -1,0 +1,7 @@
+Question 1, I created createcounter function which returns a seperate count for each individual. This says about the concept of closure.
+Question 2, I used a for loop with setTimeout to display 'Hi {name}' in every 1sec(1000ms). This is closure inside loops.
+Question 3,
+  Part 1, this explains hoisting with let, which demonstrates how accessing 'let' before declaration gives an error.
+  Part 2, this says about the significance of this, how this behaves in normal functions and how the arrow function provides a solution.
+  Part 3, describes aboout the closure, similar to as question1, where inner function retains access to variables from outer scope.
+  Part 4, uses rest parameter as an argument in the flexiblefunction, to accept flexible number of arguments.
