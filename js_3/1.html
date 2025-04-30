@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alert(cA())">A</button>
+    <button onclick="alert(cB())">B</button>
+    <script>
+        function createcounter()
+        {
+            let count=0;
+            return function (){
+                count++;
+                return count;
+            };
+        }
+        const cA=createcounter();
+        const cB=createcounter();
+    </script>
+</body>
+</html>
