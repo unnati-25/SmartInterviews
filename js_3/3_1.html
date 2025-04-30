@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let v=10;
+        console.log("Initial value:",v);
+        function revealmystery()
+        {
+            try{
+                console.log("Inside function_try:",v);
+            }
+            catch(error){
+                console.log(error);
+            }
+            let v=20;
+            console.log("Inside function:",v);
+        }
+        revealmystery();
+        console.log("Outside function:",v)
+    </script>
+</body>
+</html>

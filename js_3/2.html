@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function delayedGreeter(names)
+    {
+        let n=names.length;
+        for(let i=0;i<n;i++)
+        {
+            setTimeout(()=>console.log(`Hello ${names[i]}!`),i*1000);
+        }
+    }
+    delayedGreeter(['Alice','Bob','Charlie']);
+</script>
+</body>
+</html>

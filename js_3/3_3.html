@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function setupcounter(v)
+        {
+            let count=v;
+            function inc()
+            {
+                count++;
+                return count;
+            }
+            function dec()
+            {
+                count--;
+                return count;
+            }
+            return {inc,dec};
+        }
+        const cA=setupcounter(10);
+        console.log(cA.inc());
+        console.log(cA.dec());
+        const cB=setupcounter(5);
+        console.log(cB.inc());
+        console.log(cB.dec());
+    </script>
+</body>
+</html>
