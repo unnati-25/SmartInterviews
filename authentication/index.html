@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Auth System</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    input { margin: 5px 0; padding: 6px; }
+    button { margin-top: 10px; padding: 6px 12px; }
+  </style>
+</head>
+<body>
+  <h2>Authentication System</h2>
+  
+  <label for="operation">Choose Operation:</label><br/>
+  <select id="operation">
+    <option value="signup">Signup</option>
+    <option value="login">Login</option>
+  </select><br/><br/>
+
+  <label for="username">Username:</label><br/>
+  <input type="text" id="username" placeholder="Enter username"><br/>
+
+  <label for="password">Password:</label><br/>
+  <input type="password" id="password" placeholder="Enter password"><br/>
+
+  <button onclick="sendRequest()">Submit</button>
+  <p id="result"></p>
+  <script src="server.js"></script>
+  <script>
+    async function sendRequest() {
+      const operation = document.getElementById('operation').value;
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      const res = await fetch('http://localhost:3000/' + operation, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      });
+      if (!username || !password) {
+  document.getElementById('result').innerText = "Both fields are required.";
+  return;
+}
+      const text = await res.text();
+      document.getElementById('result').innerText = text;
+    }
+  </script>
+</body>
+</html>
